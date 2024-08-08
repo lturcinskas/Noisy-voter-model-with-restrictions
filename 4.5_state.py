@@ -2,7 +2,6 @@ import itertools
 import os
 import numpy as np
 import random
-from beta_fit import naive_beta_binomial_fit
 import typer
 from typing import List
 from typing_extensions import Annotated
