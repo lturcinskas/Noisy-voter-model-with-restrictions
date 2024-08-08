@@ -5,6 +5,12 @@ Python implementation of noisy voter model via Gillespie method with added restr
   <img alt="graphs used in simulation" src="./graph_reference.png"/>
 </div>
 
+## Requirements
+
+- numpy (tested with 2.0.0)
+- typer (tested with 0.12.3)
+- typing_extensions (tested with 4.12.2)
+
 ## Acknowledgements
 
 This code was written as a part of summer internship project "Influence of the state interaction network on the statistical properties of the voter model". Internship was supported by [Research Council of Lithuania](https://lmt.lrv.lt) (P-SV-24-28). Internship was supervised by [Aleksejus Kononovicius](https://kononovicius.lt).
