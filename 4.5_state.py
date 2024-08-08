@@ -127,7 +127,7 @@ def main(
         """
     restrictions = [[0, 0, 0, 1], [0, 0, 1, 0], [0, 1, 0, 0], [1, 0, 0, 0]]
 
-    result = get_series(number, time_step, n_steps, restrictions, epsilon)
+    result = get_series(initial_condition, time_step, n_steps, restrictions, epsilon)
 
     data_name = unique_file(f"4.5_data_{epsilon}", "txt")
 
