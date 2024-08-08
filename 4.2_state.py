@@ -112,7 +112,7 @@ def unique_file(basename, ext):
 def main(
         epsilon: float,
         n_steps: int,
-        time_step: int,
+        time_step: float,
         initial_condition: Annotated[List[float], typer.Option()] = [],
 ) -> None:
     """
