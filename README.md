@@ -12,7 +12,7 @@ Python implementation of noisy voter model via Gillespie method with added restr
 - typing_extensions (tested with 4.12.2)
 
 ## Usage of Gillespie method
-none
+none`a`
 
 ## Acknowledgements
 
