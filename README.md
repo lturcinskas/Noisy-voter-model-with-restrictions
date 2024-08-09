@@ -12,20 +12,23 @@ Python implementation of noisy voter model via Gillespie method with added restr
 - typing_extensions (tested with 4.12.2)
 
 ## Usage of Gillespie method
-text
+Here is an example of how to simulate and plot trajectory a specific opinion.
 ```
 import state_3
 import numpy as np
 import glob
 import matplotlib.pyplot as plt
 
+#set parameters
 initial_condition = [50, 20, 30]
 time_step = 1
 n_steps = 100
 epsilon = 0.5
 
+#generate and save file with series
 state_3.main(epsilon, n_steps, time_step, initial_condition)
 
+#extract data from file
 name = ""
 for pathname in glob.glob(r"3_data_0.5*.txt"):
     name = pathname
@@ -36,6 +39,7 @@ opinion_0 = [item[0] for item in data]
 
 time = list(range(len(opinion_0)))
 
+#plot data
 plt.figure()
 plt.suptitle("Sample trajectory of opinion 0")
 plt.xlabel("time")
