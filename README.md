@@ -13,7 +13,7 @@ Python implementation of noisy voter model via Gillespie method with added restr
 
 ## Usage of Gillespie method
 text
-`
+```
 import state_3
 import numpy as np
 import glob
@@ -43,7 +43,7 @@ plt.ylabel("opinion")
 plt.plot(time, opinion_0)
 plt.grid()
 plt.show()
-`
+```
 Using this code one should get similar figure as below.
 <div align="center">
   <img alt="sample" src="figs/sample.png"/>
