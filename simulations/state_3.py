@@ -13,13 +13,13 @@ def main(
         initial_condition: Annotated[List[int], typer.Option()] = [],
 ) -> None:
     """
-    Input:
-        epsilon - rate of spontaneous opinion switch.
-        n_steps - number of steps; length of simulation.
-        time_step - time step between observations.
-        initial_condition - initial distribution of opinions.
-    Output:
-        None. Function saves file with array of observed values.
+        Input:
+            epsilon - rate of spontaneous opinion switch.
+            n_steps - number of steps; length of simulation.
+            time_step - time step between observations.
+            initial_condition - initial distribution of opinions.
+        Output:
+            None. Function saves file with array of observed values.
     """
     restrictions = [[0, 0, 1], [0, 0, 0], [1, 0, 0]]
     result = get_series(initial_condition, time_step, n_steps, restrictions, epsilon)
