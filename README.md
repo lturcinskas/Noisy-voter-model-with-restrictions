@@ -2,7 +2,7 @@
 
 Python implementation of noisy voter model via Gillespie method with added restrictions. In this model some vertices are omitted from the network of opinions (see graph reference below), meaning certain opinions can't interact directly. Here we only analyse cases with 3 and 4 opinions.
 <div align="center">
-  <img alt="graphs used in simulation" src="./graph_reference.png"/>
+  <img alt="graphs used in simulation" src="figs/graph_reference.png"/>
 </div>
 
 ## Requirements
