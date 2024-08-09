@@ -12,7 +12,42 @@ Python implementation of noisy voter model via Gillespie method with added restr
 - typing_extensions (tested with 4.12.2)
 
 ## Usage of Gillespie method
-none`a`
+text
+`
+import state_3
+import numpy as np
+import glob
+import matplotlib.pyplot as plt
+
+initial_condition = [50, 20, 30]
+time_step = 1
+n_steps = 100
+epsilon = 0.5
+
+state_3.main(epsilon, n_steps, time_step, initial_condition)
+
+name = ""
+for pathname in glob.glob(r"3_data_0.5*.txt"):
+    name = pathname
+
+data = np.genfromtxt(name, delimiter=',')
+
+opinion_0 = [item[0] for item in data]
+
+time = list(range(len(opinion_0)))
+
+plt.figure()
+plt.suptitle("Sample trajectory of opinion 0")
+plt.xlabel("time")
+plt.ylabel("opinion")
+plt.plot(time, opinion_0)
+plt.grid()
+plt.show()
+`
+Using this code one should get similar figure as below.
+<div align="center">
+  <img alt="sample" src="figs/sample.png"/>
+</div>
 
 ## Acknowledgements
 
