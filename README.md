@@ -11,6 +11,9 @@ Python implementation of noisy voter model via Gillespie method with added restr
 - typer (tested with 0.12.3)
 - typing_extensions (tested with 4.12.2)
 
+## Usage of Gillespie method
+none
+
 ## Acknowledgements
 
 This code was written as a part of summer internship project "Influence of the state interaction network on the statistical properties of the voter model". Internship was supported by [Research Council of Lithuania](https://lmt.lrv.lt) (P-SV-24-28). Internship was supervised by [Aleksejus Kononovicius](https://kononovicius.lt).
